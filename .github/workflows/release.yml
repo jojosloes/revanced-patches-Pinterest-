@@ -46,5 +46,5 @@ jobs:
 
       - name: Release
         env:
-          GITHUB_TOKEN: ${{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}}
+          GITHUB_TOKEN: ${{secrets.REPOSITORY_PUSH_ACCESS}}
         run: npm exec semantic-release
